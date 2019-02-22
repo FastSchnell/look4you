@@ -13,8 +13,8 @@ const (
 
 type Lb struct {
     Endpoints []string
-    Timeout uint8      // health monitor timeout
-    Delay uint8        // health monitor delay
+    Timeout uint8      // health monitor timeout, Default: 3s
+    Delay uint8        // health monitor delay, Default:3s
     index int
     pool *pool
     isClose *bool
