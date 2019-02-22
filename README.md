@@ -21,6 +21,7 @@ import "look4you/loadbalancer"
 endpoints := []string{"127.0.0.1:8000", "127.0.0.1:8001", "127.0.0.1:8002"}
 lb := loadbalancer.Lb{Endpoints: endpoints}
 lb.init()
+defer lb.Close()
 
 endpoint, err := lb.GetEndpoint()
 if err != nil {
