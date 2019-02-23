@@ -16,7 +16,7 @@ Install look4you using the "go get" command:
     
 Usage
 -----
-```
+```go
 import "look4you/loadbalancer"
 endpoints := []string{"127.0.0.1:8000", "127.0.0.1:8001", "127.0.0.1:8002"}
 lb := loadbalancer.Lb{Endpoints: endpoints}

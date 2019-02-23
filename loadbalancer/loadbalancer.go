@@ -81,7 +81,7 @@ func (cls *Lb) GetEndpoint() (string, error) {
 		}
 	}
 
-	return "", fmt.Errorf("not avaliable endpoint")
+	return "", fmt.Errorf("no avaliable endpoint")
 }
 
 
